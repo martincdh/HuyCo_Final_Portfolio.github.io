@@ -299,6 +299,8 @@ button {
 .stats-list{
   display: flex;
   justify-content: space-evenly;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .stat-container{
@@ -338,7 +340,7 @@ button {
 
 .about{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
   margin: 0 100px;
@@ -376,7 +378,7 @@ button {
 
 .skills{
   display: grid;
-  grid-template-columns: repeat(2, 3fr);
+  grid-template-columns: repeat(auto, 3fr);
   gap: 20px;
   grid-auto-rows: minmax(100px, auto);
   margin: 0 100px;
@@ -455,9 +457,9 @@ button {
 
 .experiences{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto, 1fr);
   gap: 50px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(50px, auto);
   margin: 0 100px;
 }
 
@@ -486,7 +488,7 @@ button {
 
 .contact{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto, 1fr);
   gap: 20px;
   grid-auto-rows: minmax(100px, auto);
   margin: 0 100px;
@@ -608,43 +610,41 @@ button {
    * #Footer
   \*-----------------------------------*/
 
-.footer { padding-block: var(--footer-padding); }
-
-.footer{
-
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: gray;
-}
-
-
-.container-bot{
-  margin-left: 100px;
-  background-color: burlywood;
-  border-radius: 50%;
-  padding: 20px;
-  place-items: center;
-}
-
-.small-container-bot{
+  .footer {
+    background: var(--bg-secondary);
+    padding-block: 20px;
+    box-shadow: var(--shadow-1);
+  }
+  
+  .footer .logo { margin-bottom: 15px; }
+  
+.container-b{
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 5px;
 }
 
-.copyright {
-  color: var(--color-secondary);
-  line-height: 1.6;
-  margin: auto 100px auto auto;
-}
+  .copyright {
+    color: var(--color-secondary);
+    line-height: 1.6;
+  }
+  
+  .copyright a {
+    display: inline-block;
+    color: var(--raw-seinna);
+  }
 
-.copyright a {
-  display: inline-block;
-  color: var(--raw-seinna);
-}
-
+  .container-bot{
+    background-color: antiquewhite;
+    background: lightblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 .contact-social{
   display: flex;
   justify-content: flex-start;
@@ -659,3 +659,11 @@ button {
 
 
 
+ /*-----------------------------------*\
+   * #MEDIA QUERIES
+  \*-----------------------------------*/
+  
+  /**
+   * responsive for larger than 550px screen
+   */
+  
