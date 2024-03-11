@@ -649,9 +649,6 @@ button {
   color: var(--raw-seinna);
 }
 
-.about , .skills, .experiences, .contact{
-  margin: 0 80px;
-}
 
  /*-----------------------------------*\
    * #MEDIA QUERIES
@@ -695,6 +692,23 @@ button {
       display: grid;
       grid-template-columns: repeat(2, 1fr,1fr);
       gap: 20px;
+      grid-auto-rows: minmax(50px, auto);
+    
+    }
+   }
+
+   @media only screen 
+   and (width: 428px) 
+   and (height: 926px) 
+   and (-webkit-device-pixel-ratio: 3) { 
+    .about , .skills, .experiences, .contact{
+      margin: 0 20px;
+    }
+
+    .experiences{
+      display: grid;
+      grid-template-columns: repeat(auto, 1fr);
+      gap: 50px;
       grid-auto-rows: minmax(50px, auto);
     
     }
