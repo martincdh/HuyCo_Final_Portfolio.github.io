@@ -104,7 +104,8 @@ body.light_theme {
   
 li { list-style: none; }
   
-a { text-decoration: none; }
+a { text-decoration: none; 
+color: black;}
 
 a,
 img,
