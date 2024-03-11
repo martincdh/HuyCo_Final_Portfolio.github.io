@@ -336,30 +336,24 @@ button {
    * #ABOUT
   \*-----------------------------------*/
 
-.about { padding-block: var(--section-padding); }
-
-.about{
-  display: grid;
-  grid-template-columns: repeat(auto, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  margin: 0 100px;
-}
-
-
-.s1{
-  grid-column: 1;
-}
-.s2{
-  grid-column: 2;
-}
-
 
 .about-title{
   font-size: 30px;
   margin-bottom: 20px;
   border-bottom: 1.5px solid black;
 }
+
+.about { padding-block: var(--section-padding); }
+
+.about{
+  display: grid;
+  grid-template-columns: repeat(auto, 3fr);
+  gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+
+}
+
+
 
 .hire{
   bottom: 0;
@@ -381,7 +375,7 @@ button {
   grid-template-columns: repeat(auto, 3fr);
   gap: 20px;
   grid-auto-rows: minmax(100px, auto);
-  margin: 0 100px;
+
 }
 
 
@@ -460,7 +454,7 @@ button {
   grid-template-columns: repeat(auto, 1fr);
   gap: 50px;
   grid-auto-rows: minmax(50px, auto);
-  margin: 0 100px;
+
 }
 
 .experience-ul > li{
@@ -488,19 +482,17 @@ button {
 
 .contact{
   display: grid;
-  grid-template-columns: repeat(auto, 1fr);
+  grid-template-columns: repeat(auto, 1fr,1fr);
   gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
-  margin: 0 100px;
+  grid-auto-rows: minmax(50px, auto);
+
 }
 
 
 .contact-info{
   background-color: rgba(27, 27, 50,0.5);
   border-radius: 20px;
-  width: 100%;
   padding: 0 20px;
-
 }
 
 .contact-info > div{
@@ -657,7 +649,9 @@ button {
   color: var(--raw-seinna);
 }
 
-
+.about , .skills, .experiences, .contact{
+  margin: 0 80px;
+}
 
  /*-----------------------------------*\
    * #MEDIA QUERIES
@@ -666,4 +660,42 @@ button {
   /**
    * responsive for larger than 550px screen
    */
-  
+@media only screen 
+   and (width: 390px) 
+   and (height: 844px) 
+   and (-webkit-device-pixel-ratio: 3) { 
+    .about , .skills, .experiences, .contact{
+      margin: 0 20px;
+    }
+
+    .experiences{
+      display: grid;
+      grid-template-columns: repeat(auto, 1fr);
+      gap: 50px;
+      grid-auto-rows: minmax(50px, auto);
+    
+    }
+   }
+
+@media only screen 
+   and (width: 768px) 
+   and (height: 1024px)  { 
+    .about , .skills, .experiences, .contact{
+      margin: 0 20px;
+    }
+
+    .experiences{
+      display: grid;
+      grid-template-columns: repeat(auto, 1fr);
+      gap: 50px;
+      grid-auto-rows: minmax(50px, auto);
+    
+    }
+    .contact{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr,1fr);
+      gap: 20px;
+      grid-auto-rows: minmax(50px, auto);
+    
+    }
+   }
