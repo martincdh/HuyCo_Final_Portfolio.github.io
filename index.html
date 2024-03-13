@@ -10,6 +10,8 @@
     <!-- 
         - custom css link
     -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
     <link rel="stylesheet" href="styles.css">
 
     <!-- 
@@ -22,7 +24,6 @@
         rel="stylesheet"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
           
      </head>
 
@@ -35,7 +36,7 @@
               </div>
               
               <nav class = 'nav'>
-                <ul class=" nav-list">
+                <ul class="nav-list">
                   <li><a href = '#about' class="navbar-link">About</a></li>
                   <li><a href = '#skills' class="navbar-link">Skills</a></li>
                   <li><a href = '#experiences' class="navbar-link">Work Experience</a></li>
@@ -47,21 +48,16 @@
                     </label>
                   </li>
                 </ul>
-                <div class="nav-select">
-                  <select> <span class="material-symbols-outlined">
-                    menu
-                    </span>
-                    <option value="" selected="selected">Select</option> 
-                    
-                    <option value="#about">About</option> 
-                    <option value="#skills">Skills</option> 
-                    <option value="#experiences">Work Experience</option> 
-                    <option value="#contact">Contact</option> 
-                  </select> 
-                  <label class="switch-label">
-                    <input type="checkbox" class="checkbox" data-theme-btn>
-                    <span class="slider"></span>
-                  </label>
+
+                <ul class="nav-l">
+                  <li class = "toggle-switch">
+                    <label class="switch-label">
+                      <input type="checkbox" class="checkbox" data-theme-btn>
+                      <span class="slider"></span>
+                    </label>
+                  </li>
+                </ul>
+  
                 </div>
                 
 
@@ -73,6 +69,27 @@
             <!---
             <picture class="first-background">
               <img src="background.png" alt="Kitten" class="w-100">
+              <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+
+                <select> <span class="material-symbols-outlined">
+                    menu
+                    </span>
+                    <option value="" selected="selected">Select</option> 
+                    
+                    <option value="#about">About</option> 
+                    <option value="#skills">Skills</option> 
+                    <option value="#experiences">Work Experience</option> 
+                    <option value="#contact">Contact</option> 
+                    <option class="toggle-switch">
+                      <label class="switch-label">
+                        <input type="checkbox" class="checkbox" data-theme-btn>
+                        <span class="slider"></span>
+                      </label></option>
+                  </select> 
+              </button>
             </picture>
             -->
             
@@ -94,7 +111,7 @@
                 <li>
                   <a href="" class ='stat-container'>
                     <div class="circle">
-                      <img class="small-icon">
+                      <img src="portfolio.png" alt="experience" class="small-icon">
                     </div>
                     <h2 class="stats-title">
                       <p>3+</p>
@@ -105,7 +122,7 @@
                 <li>
                   <a href="" class ='stat-container'>
                     <div class="circle">
-                      <img class="small-icon">
+                      <img src="project.png" alt="experience" class="small-icon">
                     </div>
                     <h2 class="stats-title">
                       <p>10+</p>
@@ -116,7 +133,7 @@
                 <li>
                   <a href="" class ='stat-container'>
                     <div class="circle">
-                      <img class="small-icon">
+                      <img src="medal.png" alt="experience" class="small-icon">
                     </div>
                     <h2 class="stats-title">
                       <p>5+</p>
@@ -172,25 +189,29 @@
             
             <div class ='skills-content-2'>
               <div class="skills-list">
-                <div class = 'skill-box roll'>
+                <div class = 'skill-box' id="skill-box">
                   
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="python" />
           
                 </div>
-                <div class = 'skill-box roll'>
-                  HTML PHP
+                <div class = 'skill-box'>
+                  
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" alt ="R"/>
+          
                 </div>
-                <div class = 'skill-box roll'>
-                  HTML PHP
+                <div class = 'skill-box'>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="html5"/>
                 </div>
-                <div class = 'skill-box roll'>
-                  HTML PHP
+                <div class = 'skill-box'>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="css3"/>
                 </div>
-                <div class = 'skill-box roll'>
-                  HTML PHP
+                <div class = 'skill-box'>
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="mysql"/>
                 </div>
-                <div class = 'skill-box roll'>
-                  HTML PHP
+                <div class = 'skill-box'>
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="cplusplus"/>
                 </div>
               </div>
             </div>
@@ -315,7 +336,7 @@
           <div class="container-b">
 
               <p class = "container-bot">
-                Martin
+                MARTIN
               <p/>
       
             <p class="copyright">

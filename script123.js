@@ -136,3 +136,20 @@ last_text_3 = text3.length - 1;
     }
     document.getElementById("div_3").innerHTML = text3[clicks_3];
   }; 
+
+
+const observer = new IntersectionObserver(intersections => {
+    intersections.forEach(({
+      target,
+      isIntersecting
+    }) => {
+      target.classList.toggle('tes', isIntersecting);
+    });
+  }, {
+    threshold: 0
+  });
+  
+  document.querySelectorAll('wel').forEach(h2 => {
+    observer.observe(h2);
+  });
+
