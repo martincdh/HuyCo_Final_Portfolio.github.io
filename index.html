@@ -19,7 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     </head>
 
     <body class="dark_theme">
@@ -27,7 +28,7 @@
             <div class = 'container'>
               <div class="small-container">
                 <h1 class="orange">M</h1>
-                <h2>Martin Co</h2>
+                <h2 class="orange">Martin Co</h2>
               </div>
               
               <nav class = 'nav'>
@@ -42,7 +43,25 @@
                       <span class="slider"></span>
                     </label>
                   </li>
-                </ul
+                </ul>
+                <div class="nav-select">
+                  <select> <span class="material-symbols-outlined">
+                    menu
+                    </span>
+                    <option value="" selected="selected">Select</option> 
+                    
+                    <option value="#about">About</option> 
+                    <option value="#skills">Skills</option> 
+                    <option value="#experiences">Work Experience</option> 
+                    <option value="#contact">Contact</option> 
+                  </select> 
+                  <label class="switch-label">
+                    <input type="checkbox" class="checkbox" data-theme-btn>
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                
+
               </nav>
             </div>
         </header>
@@ -61,8 +80,8 @@
                 <p class = 'welcome-title'>
                   I love coding
                 </p>
-                <button class="outline purple-white">
-                  <a href="#contact" class="btn btn-primary">Get in touch</a>
+                <button class="outline purple-white" onclick="location.href='#contact'" id = 'first-butt'>
+                  Get in touch
                 </button>
                 
             </div>
@@ -106,26 +125,35 @@
           </section>
           
           <section class = 'about' id = 'about'>
-            <div class="slide">
-              <h2 class="about-title">
-                I'm a fullstack developer!
-              </h2>
-              <p>
-                I am extremely proficient in data entry and 
-                have a deep understanding of data management principles. I am also well-versed in using various software programs and tools to ensure data accuracy. 
-                I used programming languages such as SQL 
-                (involving DDL, DML, and DQL) and Python for my past work experiences. With the knowledge of SQL, I successfully checked data validation of customers' 
-                information, master data, and policies through SQL queries, regex functions, and optimized data collection procedures. 
-              </p>
+            <div class="div2">
+
             </div>
-            <div class="hire">
-              <button class="outline purple-white">
-                <a href="#contact" class="btn btn-primary" download="Resume.pdf">Resume</a>
-              </button>
-              <button class="outline purple-white">
-                <a href="#contact" class="btn btn-primary">Contact</a>
-              </button>
+            
+            <div class="div1">
+                <h2 class="about-title">
+                  I'm a fullstack developer!
+                </h2>
+                <p>
+                  I am extremely proficient in data entry and 
+                  have a deep understanding of data management principles. I am also well-versed in using various software programs and tools to ensure data accuracy. 
+                  I used programming languages such as SQL 
+                  (involving DDL, DML, and DQL) and Python for my past work experiences. With the knowledge of SQL, I successfully checked data validation of customers' 
+                  information, master data, and policies through SQL queries, regex functions, and optimized data collection procedures. 
+                </p>
+              <div class="hire">
+                <a class="btn btn-primary" download="Resume.pdf">
+                <button class="outline purple-white">
+                  Resume
+                </button></a>
+                <a href="#contact" class="btn btn-primary" >
+                  <button class="outline purple-white">
+                    Contact
+                  </button>
+                </a>
+              </div>
             </div>
+            
+            
           </section>
 
           <section class = "skills" id = "skills">
@@ -138,19 +166,22 @@
               
             </div>
             
-            <div class="skills-list">
-              <ul class="u1">
-                <li>A</li>
-                <li>B</li>
-                <li>C</li>
-              </ul>
-              <ul class="u1">
-                <li>A</li>
-                <li>B</li>
-                <li>C</li>
-              </ul>
-
+            <div class ='skills-content-2'>
+              <div class="skills-list">
+                <ul class="u1">
+                  <li>A</li>
+                  <li>B</li>
+                  <li>C</li>
+                </ul>
+                <ul class="u1">
+                  <li>A</li>
+                  <li>B</li>
+                  <li>C</li>
+                </ul>
+  
+              </div>
             </div>
+            
 
           </section>
           <section class = 'experiences' id = 'experiences'>
@@ -213,22 +244,21 @@
           <div class="contact-info">
             <div class="contact-question">
               <h2 class="about-title">Do you want to contact me?</h2>
-              <p>If yes, please fill out the form to contact me or reach out to me at the below contact info</p>
             </div>
             <div class="contact-list">
               <ul class="contact-ul">
                 <li class="contact-li">
                   <h3>Address</h3>
                   
-                  <p>Los Angeles, CA</p>
+                  <p class="contact-p">Los Angeles, CA</p>
                 </li>
                 <li class="contact-li">
                   <h3>Phone</h3>
-                  <p>+1 (419) 601-2258</p>
+                  <p class="contact-p">+1 (419) 601-2258</p>
                 </li>
                 <li class="contact-li">
                   <h3>Email</h3>
-                  <a href="mailto:huydcjobs@gmail.com">huydcjobs@gmail.com</a>
+                  <a href="mailto:huydcjobs@gmail.com"><p class="contact-p">huydcjobs@gmail.com</p></a>
                 </li>
               </ul>
             </div>

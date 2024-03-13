@@ -4,11 +4,13 @@
    * colors
    */
 
-  --raw-seinna: hsl(24, 74%, 58%);
+  --raw-seinna: #bcb8b1;
   --sizzling-sunrise: hsl(51, 95%, 54%);
   --scarlet: hsl(13, 96%, 47%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
+
+  --blue: #acbabf;
 
   /**
    * typography
@@ -64,7 +66,7 @@ body.dark_theme {
 
   --bg-primary: hsl(0, 0%, 12%);
   --bg-secondary: hsl(0, 0%, 19%);
-  --color-primary: hsl(0, 0%, 100%);
+  --color-primary: #828385;
   --color-secondary: hsl(0, 0%, 62%);
   --card-shadow: hsla(0, 0%, 0%, 0.4);
   --input-bg: hsl(0, 0%, 16%);
@@ -91,6 +93,7 @@ body.light_theme {
 
 /*-----------------------------------*\
  * #All HTML
+ color: #373737;
 \*-----------------------------------*/
 
 
@@ -105,7 +108,8 @@ body.light_theme {
 li { list-style: none; }
   
 a { text-decoration: none; 
-color: #a0a1a4;}
+  color: var(--color-primary);
+}
 
 a,
 img,
@@ -130,7 +134,7 @@ body {
 
 .h2,
   .h3,
-  .h4 {
+  .h4, label, h3, .orange {
     color: var(--color-primary);
     font-family: var(--ff-poppins);
     line-height: 1.2;
@@ -158,13 +162,7 @@ header.active {
   box-shadow: var(--shadow-1);
 }
 
-header .container{
-  display: flex;
-  padding-inline: 10px;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
+
 
 .header.on {
   padding-block: 12px;
@@ -177,8 +175,7 @@ header .container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 50px;
-  background-color: burlywood;
+  background-color: #acbabf;
   padding: 20px;
   border-radius: 50%;
   flex-wrap: wrap;
@@ -190,7 +187,8 @@ header .container{
   overflow: hidden;
 }
 
-.nav .nav-list{
+
+.nav ul{
   display: flex;
   gap: 20px;
 
@@ -207,8 +205,10 @@ header .container{
 }
 
 .navbar-link:hover {
-  border-bottom: 3px solid black;
+  color: whitesmoke;
 }
+
+
 
 h1 {
   color: var(--color-primary);
@@ -221,6 +221,9 @@ h1 { font-size: var(--fs-2); }
 
 /*-----------------------------------*\
  * #Main
+ .navbar-link:hover {
+  border-bottom: 3px solid #acbabf;
+}
 
   background-image: url('background.jpeg');
 \*-----------------------------------*/
@@ -259,11 +262,17 @@ main{
 
 .welcome h2{
   margin-bottom: 5px;
+
 }
 
 .welcome p{
   margin-bottom: 35px;
 }
+
+.welcome h2, p {
+  color: #565656;
+}
+
 
 
 button {
@@ -285,16 +294,18 @@ button {
     } 
     &.purple-white {
         font-weight: 700;
-        color: #664e96;
-        border-color: #664e96;
+        color: #91b1bd;
+        border-color: #acbabf;
         background: transparent;
     }
     &.purple-white:hover {
         color: white;
-        background: #664e96;
-        border-color: #664e96;
+        background: #91b1bd;
+        border-color: #acbabf;
     }
 }
+
+
 
 
 /*-----------------------------------*\
@@ -311,7 +322,7 @@ button {
 }
 
 .stat-container{
-  background-color: rgb(204, 197, 250);
+  background-color: #acbabf;
   border-radius: 20px;
   padding: 25px;
   min-width: 300px;
@@ -347,19 +358,17 @@ button {
 .about-title{
   font-size: 30px;
   margin-bottom: 20px;
-  border-bottom: 1.5px solid black;
+  border-bottom: 1.5px solid #acbabf;
   color:hsl(0, 0%, 62%);
+}
+
+.about-title:nth-last-child(-n+2){
+  border-bottom: 1.5px solid #282623;
 }
 
 .about { padding-block: var(--section-padding); }
 
-.about{
-  display: grid;
-  grid-template-columns: repeat(auto, 3fr);
-  gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
 
-}
 
 
 
@@ -367,8 +376,8 @@ button {
   bottom: 0;
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-top: 15px;
+  gap: 100px;
+  margin-top: 50px;
 
 }
 
@@ -383,13 +392,7 @@ button {
 
 .skills { padding-block: var(--section-padding); }
 
-.skills{
-  display: grid;
-  grid-template-columns: repeat(auto, 3fr);
-  gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
 
-}
 
 
 
@@ -464,7 +467,7 @@ button {
   gap: 50px;
   grid-auto-rows: minmax(50px, auto)
 }
-   \*grid-auto-rows: minmax(50px, auto);*/
+   \*grid-auto-rows: minmax(50px, auto);
    
   \*-----------------------------------*/
 
@@ -483,7 +486,8 @@ button {
 .experience-ul > p{
   display: flex;
   flex-direction: column;
-  background-color: bisque;
+  background-color: #a0a1a4;
+  color: white;
   border-radius: 20px;
   gap: 20px;
   padding: 20px;
@@ -503,11 +507,11 @@ button {
   font-size: 1em;
   border-radius: 20px;
   border: none;
-  background-color: indianred;
+  background-color: #a0a1a4;
 }
 
 .prev:hover, .next:hover{
-  background-color: aquamarine;
+  background-color: #acbabf;
   color: white;
 }
 
@@ -528,7 +532,7 @@ button {
 
 
 .contact-info{
-  background-color: rgba(27, 27, 50,0.5);
+  background-color: #b9b8b6;
   border-radius: 20px;
   padding: 0 20px;
 }
@@ -548,6 +552,7 @@ button {
   margin: 10px 0;
   
 }
+
 
 
 .social{
@@ -597,11 +602,20 @@ button {
   
   /* set background color for the box*/
   input, textarea {
-    background-color: #0a0a23;
-    border: 1px solid #0a0a23;
-    color:#ffffff;
+    background-color: #acbabf;
+    background: transparent;
+    border: 1px solid #acbabf;
+    color: #c0c0c2;
     min-height: 2em;
   
+  }
+
+  input:hover, textarea:hover{
+    cursor: pointer;
+    background-color: #acbabf;
+    border: 1px solid #acbabf;
+    color:#565656;
+    min-height: 2em;
   }
   
   /*adjust the display, smaller the box, adjust the submit to center*/
@@ -611,9 +625,9 @@ button {
     width: 50%;
     min-width: 200px;
     height: 0.25em;
-    font-size: 1.2rem;
-    background-color: #3b3b4f; /*color of button*/
-    border-color: white; /*color of button's border*/
+    font-size: 1.2rem; /*color of button*/
+    background-color: #a0a1a4;
+    border-color: #acbabf; /*color of button's border*/
     border-radius: 20px;
     margin-top: 1em;
     cursor: pointer;
@@ -667,7 +681,7 @@ button {
 
   .container-bot{
     background-color: antiquewhite;
-    background: lightblue;
+    background: #acbabf;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -683,13 +697,14 @@ button {
 }
 
 
-.orange{
-  color: var(--raw-seinna);
-}
+
 
 
  /*-----------------------------------*\
    * #MEDIA QUERIES
+   .orange{
+  color: #828385;
+}
   \*-----------------------------------*/
   
   /**
@@ -699,8 +714,42 @@ button {
    and (width: 390px) 
    and (height: 844px) 
    and (-webkit-device-pixel-ratio: 3) { 
+    .nav ul     { display: none; }
+    .nav .nav-select { display: inline-block; }
+
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
     .about , .skills, .experiences, .contact{
       margin: 0 20px;
+    }
+
+    .about{
+      display: grid;
+      grid-template-columns: repeat(auto, 2fr);
+      gap: 20px;
+      grid-auto-rows: minmax(100px, auto);
+    
+    }
+    .hire{
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      margin-top: 50px;
+    
+    }
+    .skills{
+      display: grid;
+      grid-template-columns: repeat(auto, 2fr);
+      gap: 20px;
+      grid-auto-rows: minmax(100px, auto);
+    
     }
 
     .experiences{
@@ -716,8 +765,43 @@ button {
    and (width: 768px) 
    and (height: 1024px) 
    and (-webkit-device-pixel-ratio: 3) { 
+    .nav ul{ display: none; }
+    .nav .nav-select { display: inline-block; }
+
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
     .about , .skills, .experiences, .contact{
       margin: 0 20px;
+    }
+
+    .about{
+      display: grid;
+      grid-template-columns: repeat(auto, 2fr);
+      gap: 20px;
+      grid-auto-rows: minmax(100px, auto);
+    
+    }
+    .hire{
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      margin-top: 50px;
+    
+    }
+
+    .skills{
+      display: grid;
+      grid-template-columns: repeat(auto, 2fr);
+      gap: 20px;
+      grid-auto-rows: minmax(100px, auto);
+    
     }
 
     .experiences{
@@ -740,8 +824,43 @@ button {
    and (width: 428px) 
    and (height: 926px) 
    and (-webkit-device-pixel-ratio: 3) { 
+    .nav ul     { display: none; }
+    .nav .nav-select { display: inline-block; }
+
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
     .about , .skills, .experiences, .contact{
       margin: 0 20px;
+    }
+
+    .about{
+      display: grid;
+      grid-template-columns: repeat(auto, 2fr);
+      gap: 20px;
+      grid-auto-rows: minmax(100px, auto);
+    
+    }
+    .hire{
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      margin-top: 50px;
+    
+    }
+
+    .skills{
+      display: grid;
+      grid-template-columns: repeat(auto, 2fr);
+      gap: 20px;
+      grid-auto-rows: minmax(100px, auto);
+    
     }
 
     .experiences{
@@ -755,9 +874,61 @@ button {
 
 @media
 only screen and (min-width: 992px){
+  
+  header .container{
+    display: flex;
+    padding-inline: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .container{
+    margin-left: 40px;
+  }
+
+  header.container{
+    margin: 0 50px 0 20px;
+  }
+
+
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .nav select{
+    display: none;
+  }
+  
+  .nav select{
+    margin: 0 auto;
+  }
+
   .about , .skills, .experiences, .contact{
     margin: 0 30px;
   }
+
+  .about{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+  
+  }
+
+  .skills{
+    display: grid;
+    grid-template-columns: repeat(auto, 2fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+  
+  }
+
   .contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -775,8 +946,50 @@ only screen and (min-width: 992px){
 
 @media 
 only screen and (min-width: 1280px)   {
+  header .container{
+    display: flex;
+    padding-inline: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  .nav select{
+    display: none;
+  }
+  
+  .nav select{
+    margin: 0 auto;
+  }
+
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
   .about , .skills, .experiences, .contact{
     margin: 0 50px;
+  }
+
+  .about{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+  
+  }
+
+  .skills{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+  
   }
   .contact{
     display: grid;
@@ -791,4 +1004,6 @@ only screen and (min-width: 1280px)   {
     gap: 50px;
     grid-auto-rows: minmax(50px, auto)
   }
+
+  
 }
