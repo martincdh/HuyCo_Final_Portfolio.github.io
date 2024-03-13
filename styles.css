@@ -832,8 +832,7 @@ color: #acbabf;}
    */
 @media only screen 
    and (width: 390px) 
-   and (height: 844px) 
-   and (-webkit-device-pixel-ratio: 3) { 
+   and (height: 844px)  { 
 
 
     .container{
@@ -860,7 +859,88 @@ color: #acbabf;}
       font-size: 5px;
     }
 
-    .toggle-switch{
+    .nav-l .toggle-switch{
+      padding: 5px;
+      left: 30px;
+    }
+
+    .about , .skills, .experiences, .contact{
+      margin: 0 20px;
+    }
+
+    .about{
+      display: grid;
+      grid-template-columns: repeat(auto, 2fr);
+      gap: 20px;
+      grid-auto-rows: minmax(100px, auto);
+    
+    }
+    .hire{
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      margin-top: 50px;
+    
+    }
+    .skills{
+      display: grid;
+      grid-template-columns: repeat(auto, 2fr);
+      gap: 20px;
+      grid-auto-rows: minmax(100px, auto);
+    
+    }
+
+    .experiences{
+      display: grid;
+      grid-template-columns: repeat(auto, 1fr);
+      gap: 50px;
+      grid-auto-rows: minmax(50px, auto);
+    
+    }
+
+    .contact-info{
+      padding-top: 15px;
+    }
+    .contact{
+      display: grid;
+      grid-template-columns: repeat(auto,1fr);
+      gap: 20px;
+      grid-auto-rows: minmax(50px, auto);
+    
+    }
+   }
+   @media only screen 
+   and (width: 844px) 
+   and (height: 390px)  { 
+
+
+    .container{
+      display: flex;
+    }
+
+    header{
+      background-color: #acbabf;
+      display: flex;
+    }
+
+    .small-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav .nav-list{display: none;}
+
+    .nav .nav-l{display: flex;}
+
+    .nav-l .navbar-link{
+      color: #acbabf;
+      font-size: 5px;
+    }
+
+    .nav-l .toggle-switch{
       padding: 5px;
       left: 30px;
     }
@@ -995,7 +1075,7 @@ color: #acbabf;}
    and (height: 926px) 
    and (-webkit-device-pixel-ratio: 3) { 
     .nav .nav-list    { display: none; }
-    .nav .nav-l { display: inline-block; }
+    .nav .nav-l { display: flex; }
     
 
     .container{
