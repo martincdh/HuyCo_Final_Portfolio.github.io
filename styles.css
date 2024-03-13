@@ -1072,7 +1072,7 @@ only screen and (min-width: 992px){
     flex-wrap: wrap;
     overflow: hidden;
   }
-  .nav select{
+  .nav .nav-l{
     display: none;
   }
 
@@ -1086,9 +1086,6 @@ only screen and (min-width: 992px){
   }
 
   
-  .nav select{
-    margin: 0 auto;
-  }
 
   .about , .skills, .experiences, .contact{
     margin: 0 30px;
@@ -1152,7 +1149,7 @@ only screen and (min-width: 1280px)   {
     flex-wrap: wrap;
     overflow: hidden;
   }
-  .nav ul{
+  .nav .nav-list{
     display: flex;
     gap: 20px;
   
@@ -1160,10 +1157,6 @@ only screen and (min-width: 1280px)   {
 
   .nav .nav-l{
     display: none;
-  }
-  
-  .nav .nav-l{
-    margin: 0 auto;
   }
 
   .checkbox:checked ~ .slider::before {
