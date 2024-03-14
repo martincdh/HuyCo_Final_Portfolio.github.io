@@ -41,7 +41,7 @@
    * spacing
    */
 
-  --section-padding: 80px;
+  --section-padding: 40px ;
 
   --footer-padding: 20px;
 
@@ -423,8 +423,9 @@ color: #acbabf;}
   color:hsl(0, 0%, 62%);
 }
 
-.about-title:nth-last-child(-n+2){
-  border-bottom: 1.5px solid #282623;
+.about-title{
+  border-bottom: 1.5px solid #acbabf;
+  color: var(--color-primary);
 }
 
 .about { padding-block: var(--section-padding); }
@@ -608,8 +609,8 @@ color: #acbabf;}
 .experience-ul > p{
   display: flex;
   flex-direction: column;
-  background-color: #a0a1a4;
-  color: white;
+  background-color: #565656;
+  color: #acbabf;
   border-radius: 20px;
   gap: 20px;
   padding: 20px;
@@ -629,12 +630,13 @@ color: #acbabf;}
   font-size: 1em;
   border-radius: 20px;
   border: none;
-  background-color: #a0a1a4;
+  background-color: #565656;
+  color: #acbabf
 }
 
 .prev:hover, .next:hover{
   background-color: #acbabf;
-  color: white;
+  color: #565656;
 }
 
 /*-----------------------------------*\
@@ -724,8 +726,8 @@ color: #acbabf;}
   input, textarea {
     background-color: #acbabf;
     background: transparent;
-    border: 1px solid #acbabf;
-    color: #c0c0c2;
+    border: 1px solid #373737;
+    color: #373737;
     min-height: 2em;
   
   }
@@ -747,12 +749,17 @@ color: #acbabf;}
     height: 0.25em;
     font-size: 1.2rem; /*color of button*/
     background-color: #a0a1a4;
+    color: #565656;
     border-color: #acbabf; /*color of button's border*/
     border-radius: 20px;
     margin-top: 1em;
     cursor: pointer;
   }
   
+  input[type="submit"]:hover{
+    background-color: #565656;
+    color: #a0a1a4;
+  }
   
   
   /*heading form*/
@@ -764,7 +771,7 @@ color: #acbabf;}
   /*modify how the label displaying and their margin left/right = 0.5, bottom/top = 0*/
   label{
 
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0;
 
   }
 
@@ -887,7 +894,7 @@ color: #acbabf;}
     .skills{
       display: grid;
       grid-template-columns: repeat(auto, 2fr);
-      gap: 20px;
+      gap: 30px;
       grid-auto-rows: minmax(100px, auto);
     
     }
@@ -968,7 +975,7 @@ color: #acbabf;}
     .skills{
       display: grid;
       grid-template-columns: repeat(auto, 2fr);
-      gap: 20px;
+      gap: 30px;
       grid-auto-rows: minmax(100px, auto);
     
     }
@@ -1045,7 +1052,7 @@ color: #acbabf;}
     .skills{
       display: grid;
       grid-template-columns: repeat(auto, 2fr);
-      gap: 20px;
+      gap: 30px;
       grid-auto-rows: minmax(100px, auto);
     
     }
@@ -1183,7 +1190,7 @@ only screen and (min-width: 992px){
   .skills{
     display: grid;
     grid-template-columns: repeat(auto, 2fr);
-    gap: 20px;
+    gap: 40px;
     grid-auto-rows: minmax(100px, auto);
   
   }
@@ -1263,7 +1270,7 @@ only screen and (min-width: 1280px)   {
   .skills{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    gap: 20px;
+    gap: 30px;
     grid-auto-rows: minmax(100px, auto);
   
   }
@@ -1319,9 +1326,9 @@ only screen and (min-width: 1024px)   {
   }
 
   .checkbox:checked ~ .slider::before {
-    -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    transform: translateX(20px);
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
     background-color: var(--dark);
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1342,7 +1349,7 @@ only screen and (min-width: 1024px)   {
   .skills{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    gap: 20px;
+    gap: 40px;
     grid-auto-rows: minmax(100px, auto);
   
   }
@@ -1705,7 +1712,7 @@ button {
     .skills{
       display: grid;
       grid-template-columns: repeat(auto, 2fr);
-      gap: 20px;
+      gap: 30px;
       grid-auto-rows: minmax(100px, auto);
     
     }
