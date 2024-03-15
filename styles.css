@@ -41,7 +41,7 @@
    * spacing
    */
 
-  --section-padding: 40px ;
+  --section-padding: 0 ;
 
   --footer-padding: 20px;
 
@@ -221,7 +221,7 @@ main{
   overflow-x: hidden;
 }
 
-.welcome-section{ padding-block: var(--section-padding); }
+.welcome-section{ padding-block: 35px; }
 
 .welcome-section {
   min-height: 100vh;
@@ -230,7 +230,7 @@ main{
   justify-content: center;
   align-items: center;
   padding-top: 115px;
-  margin-bottom: var(--section-padding);
+  margin-bottom: 35px;
 
   background-position: 50% 0;
 }
@@ -353,9 +353,10 @@ color: #acbabf;}
 
 /*-----------------------------------*\
  * #Section 2
-\*-----------------------------------*/
 
 .stats { padding-block: var(--section-padding); }
+\*-----------------------------------*/
+
 
 .stats-list{
   display: flex;
@@ -726,10 +727,14 @@ color: #acbabf;}
   input, textarea {
     background-color: #acbabf;
     background: transparent;
-    border: 1px solid #373737;
+    border: 1px solid #828385;
     color: #373737;
     min-height: 2em;
   
+  }
+
+  ::placeholder{
+    color: #565656;
   }
 
   input:hover, textarea:hover{
@@ -841,6 +846,14 @@ color: #acbabf;}
    and (min-width: 390px) 
    and (height: 844px)  { 
 
+    #about_t, #skills_t, #experiences_t, #contact_t{
+      padding-bottom: 80px;
+    }
+    
+    
+    #temp{
+      padding-bottom: 20px;
+    }
 
     .container{
       display: flex;
@@ -922,6 +935,14 @@ color: #acbabf;}
    and (width: 844px) 
    and (height: 390px)  { 
 
+    #about_t, #skills_t, #experiences_t, #contact_t{
+      padding-bottom: 80px;
+    }
+    
+    
+    #temp{
+      padding-bottom: 20px;
+    }
 
     .container{
       display: flex;
@@ -1004,6 +1025,15 @@ color: #acbabf;}
    and (width: 768px) 
    and (height: 1024px)  { 
 
+    #about_t, #skills_t, #experiences_t, #contact_t{
+      padding-bottom: 140px;
+    }
+    
+    
+    #temp{
+      padding-bottom: 20px;
+    }
+
     .container{
       display: flex;
       flex-direction: column;
@@ -1081,6 +1111,16 @@ color: #acbabf;}
    and (width: 428px) 
    and (height: 926px) 
    and (-webkit-device-pixel-ratio: 3) { 
+
+    #about_t, #skills_t, #experiences_t, #contact_t{
+      padding-bottom: 80px;
+    }
+    
+    
+    #temp{
+      padding-bottom: 20px;
+    }
+
     .nav .nav-list    { display: none; }
     .nav .nav-l { display: flex; }
     
@@ -1133,6 +1173,15 @@ color: #acbabf;}
 @media
 only screen and (min-width: 992px){
   
+  #about_t, #skills_t, #experiences_t, #contact_t{
+    padding-bottom: 80px;
+  }
+  
+  
+  #temp{
+    padding-bottom: 20px;
+  }
+
   header .container{
     display: flex;
     padding-inline: 10px;
@@ -1224,6 +1273,14 @@ only screen and (min-width: 1280px)   {
     align-items: center;
     gap: 10px;
   }
+  #about_t, #skills_t, #experiences_t, #contact_t{
+    padding-bottom: 140px;
+  }
+  
+  
+  #temp{
+    padding-bottom: 20px;
+  }
   
 
   .small-container{
@@ -1296,6 +1353,15 @@ only screen and (min-width: 1280px)   {
 
 @media 
 only screen and (min-width: 1024px)   {
+
+  #about_t, #skills_t, #experiences_t, #contact_t{
+    padding-bottom: 140px;
+  }
+  
+  
+  #temp{
+    padding-bottom: 20px;
+  }
   header .container{
     display: flex;
     padding-inline: 10px;
@@ -1407,6 +1473,14 @@ button {
    and (width: 932px) 
    and (height: 430px)  { 
 
+    #about_t, #skills_t, #experiences_t, #contact_t{
+      padding-bottom: 80px;
+    }
+    
+    
+    #temp{
+      padding-bottom: 20px;
+    }
 
     .container{
       display: flex;
@@ -1490,6 +1564,14 @@ button {
    and (width: 430px) 
    and (height: 932px)  { 
 
+    #about_t, #skills_t, #experiences_t, #contact_t{
+      padding-bottom: 80px;
+    }
+    
+    
+    #temp{
+      padding-bottom: 20px;
+    }
 
     .container{
       display: flex;
@@ -1574,6 +1656,14 @@ button {
    and (min-width: 390px) 
    and (height: 844px)  { 
 
+    #about_t, #skills_t, #experiences_t, #contact_t{
+      padding-bottom: 80px;
+    }
+    
+    
+    #temp{
+      padding-bottom: 20px;
+    }
 
     .container{
       display: flex;
@@ -1659,6 +1749,14 @@ button {
    and (max-width: 1000px) 
    and (max-height: 1000px)  { 
 
+    #about_t, #skills_t, #experiences_t, #contact_t{
+      padding-bottom: 80px;
+    }
+    
+    
+    #temp{
+      padding-bottom: 20px;
+    }
 
     .container{
       display: flex;
@@ -1741,6 +1839,14 @@ button {
    and (max-width: 1000px) 
    and (max-height: 412px)  { 
 
+    #about_t, #skills_t, #experiences_t, #contact_t{
+      padding-bottom: 80px;
+    }
+    
+    
+    #temp{
+      padding-bottom: 20px;
+    }
 
     .container{
       display: flex;
