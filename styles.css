@@ -1267,6 +1267,7 @@ only screen and (min-width: 992px){
 @media 
 only screen and (min-width: 1280px)   {
   header .container{
+    width: 100%;
     display: flex;
     padding-inline: 10px;
     justify-content: space-between;
@@ -1284,6 +1285,7 @@ only screen and (min-width: 1280px)   {
   
 
   .small-container{
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1293,6 +1295,11 @@ only screen and (min-width: 1280px)   {
     flex-wrap: wrap;
     overflow: hidden;
   }
+
+.nav{
+  margin-left: auto;
+}
+
   .nav .nav-list{
     display: flex;
     gap: 20px;
